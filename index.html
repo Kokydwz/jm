@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF6B00" />
+  <meta name="description" content="JM Film School - تعلّم صناعة المحتوى الاحترافي مع جو حطاب ومحمد إحسان" />
+  <title>JM Film School</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">
+        <img src="logo.png" alt="JM Film School" />
+        <span class="logo-text">JM Film School</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#chapters"><i class="fa-solid fa-layer-group"></i> الفصول</a>
+        <a href="#resources"><i class="fa-solid fa-download"></i> الموارد</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="القائمة">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <section class="hero">
+    <div class="hero-banner">
+      <img src="banner.jpg" alt="JM Film School — تعلّم صناعة الفيديوهات باحتراف" />
+      <div class="hero-banner-overlay"></div>
+      <div class="hero-banner-text">
+        <h1>تعلّم صناعة <span>الفيديوهات</span><br />بإحتراف!</h1>
+        <p>10 سنوات من الخبرة في التصوير والمونتاج — مُكثّفة في كورس واحد شامل</p>
+      </div>
+    </div>
+    <div class="hero-stats-bar">
+      <div class="hero-stats-inner">
+        <div class="hero-stat">
+          <div class="hero-stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div>
+            <div class="hero-stat-num">٦</div>
+            <div class="hero-stat-label">فصول</div>
+          </div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon"><i class="fa-solid fa-play"></i></div>
+          <div>
+            <div class="hero-stat-num" id="totalLessons">٠</div>
+            <div class="hero-stat-label">درس</div>
+          </div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon"><i class="fa-solid fa-box-archive"></i></div>
+          <div>
+            <div class="hero-stat-num">٤</div>
+            <div class="hero-stat-label">موارد</div>
+          </div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div>
+            <div class="hero-stat-num">١٠</div>
+            <div class="hero-stat-label">سنوات خبرة</div>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#chapters" class="btn-primary">
+            <i class="fa-solid fa-play"></i> ابدأ التعلّم
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTERS -->
+  <section class="section" id="chapters">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-layer-group"></i> المناهج</div>
+        <h2 class="section-title">الدروس والفصول</h2>
+      </div>
+      <div class="chapters-grid" id="chaptersGrid"></div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section class="section resources-section" id="resources">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-box-archive"></i> الحقيبة</div>
+        <h2 class="section-title">موارد للتحميل</h2>
+      </div>
+      <div class="resources-grid" id="resourcesGrid"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="logo" href="index.html">
+        <img src="logo.png" alt="JM" />
+        <span class="logo-text">JM Film School</span>
+      </a>
+      <p>© 2024 JM Film School — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <!-- DOWNLOAD LIQUID MODAL -->
+  <div class="dl-overlay" id="dlOverlay">
+    <div class="dl-backdrop" id="dlBackdrop"></div>
+    <div class="dl-box">
+      <div class="dl-icon-wrap"><i class="fa-solid fa-download"></i></div>
+      <div class="dl-title" id="dlTitle">تحميل الملف</div>
+      <div class="dl-subtitle">هل تريد تحميل هذا المورد؟</div>
+      <div class="dl-filename" id="dlFilename">file.zip</div>
+      <div class="dl-actions">
+        <a class="dl-btn-confirm" id="dlConfirm" href="#" download>
+          <i class="fa-solid fa-download"></i> تحميل الآن
+        </a>
+        <button class="dl-btn-cancel" id="dlCancel">
+          <i class="fa-solid fa-xmark"></i> إلغاء
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

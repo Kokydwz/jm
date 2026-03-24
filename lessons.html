@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF6B00" />
+  <title>المحاضرات — JM Film School</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="lessons.css" />
+</head>
+<body class="lessons-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">
+        <img src="logo.png" alt="JM Film School" />
+        <span class="logo-text">JM Film School</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#chapters"><i class="fa-solid fa-layer-group"></i> الفصول</a>
+        <a href="index.html#resources"><i class="fa-solid fa-download"></i> الموارد</a>
+        <a href="index.html"><i class="fa-solid fa-house"></i> الرئيسية</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="lessons-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <button class="sidebar-toggle" id="sidebarToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <span class="sidebar-title">محتوى الكورس</span>
+      </div>
+      <div class="sidebar-chapters" id="sidebarChapters"></div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="lesson-main" id="lessonMain">
+      <div class="chapter-hero" id="chapterHero">
+        <div class="chapter-hero-content">
+          <div class="chapter-badge" id="chapterBadge"></div>
+          <h1 class="chapter-title" id="chapterTitle"></h1>
+          <p class="chapter-subtitle" id="chapterSubtitle"></p>
+          <div class="chapter-meta" id="chapterMeta"></div>
+        </div>
+      </div>
+      <div class="lessons-grid-container">
+        <div class="lessons-section-header">
+          <h2 id="lessonsListTitle">المحاضرات</h2>
+        </div>
+        <div class="lessons-cards" id="lessonsCards"></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- VIDEO MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="modal-label" id="modalLabel"></span>
+          <h3 class="modal-title" id="modalTitle"></h3>
+        </div>
+        <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-video-area">
+        <div class="video-placeholder">
+          <i class="fa-solid fa-play-circle"></i>
+          <p>سيتم تشغيل الفيديو هنا</p>
+          <span id="modalVideoPath"></span>
+        </div>
+      </div>
+      <p class="modal-desc" id="modalDesc"></p>
+    </div>
+  </div>
+
+  <script src="lessons.js"></script>
+</body>
+</html>
